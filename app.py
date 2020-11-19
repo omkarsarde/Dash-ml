@@ -110,7 +110,7 @@ def plot_pie_chart(data_dict, site):
     source = ColumnDataSource(
         dict(starts=start_angle, ends=end_angle, labels=sectors, colors=color, amounts=values_act))
 
-    plot = figure(plot_height=600, title=f"WebSite Stats for: {site}", tools="",
+    plot = figure(plot_height=600, title=f"WebSite Stats for: {site}",
                   background_fill_color='lightgrey')
 
     hover = HoverTool(
