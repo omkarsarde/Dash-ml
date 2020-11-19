@@ -76,9 +76,9 @@ def logic(prediction, site):
         data_dict['Model Prediction'][0] = 0
     data_dict = logic_helper(data_dict, https_status, 'Https Status', False, 0, 10)
     data_dict = logic_helper(data_dict, ip_val, 'IP Value', None, 0, 10)
-    data_dict = logic_helper(data_dict, socket_status, 'Socket Status', False, 0, 20)
+    data_dict = logic_helper(data_dict, socket_status, 'Socket Status', False, 0, 15)
     data_dict = logic_helper(data_dict, lookup_status, 'Lookup Status', False, 0, 10)
-    data_dict = logic_helper(data_dict, reflected_status, 'Trust Status', True, 0, 20)
+    data_dict = logic_helper(data_dict, reflected_status, 'Trust Status', True, 0, 25)
     script, div = plot_pie_chart(data_dict, site)
     return prediction, obj, data_dict, script, div
 
